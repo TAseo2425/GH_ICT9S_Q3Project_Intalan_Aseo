@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Manila Rail Transit MRT</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="logo-size me-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWtKg8V116b55ct82MnsCw-TyGUkrRDdpSSw&s" alt="MRT Logo" width="40" height="40"> 
+                MRT: LRT Line 1
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">Train Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center text-primary">Welcome to Metro Manila MRT Info LRT Line 1</h1>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 order-md-2 text-center">
+                <h5 class="mb-4">Metro Manila Transit Map</h5>
+                <a href="https://commons.wikimedia.org/wiki/File:Manila_LRT-MRT_map.png"><img src="LRT-MRT.png" alt="Transit Map" class="img-fluid"></a>
+            </div>
+
+            <div class="col-md-6 order-md-1">
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="https://lrmc.ph/our-business-featured/fare-matrix/"><button class="btn btn-primary w-100">Fare Guide</button></a>
+                        </h5>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="leaving-from" class="form-label">Leaving From:</label>
+                                <select class="form-select" id="leaving-from">
+                                    <option selected>Select a Station</option>
+                                    <option value="2">Fernando Poe Jr.</option>
+                                    <option value="4">Balintawak</option>
+                                    <option value="6">5th Avenue</option>
+                                    <option value="8">Monumento</option>
+                                    <option value="10">Grace Park</option>
+                                    <option value="12">R. Papa</option>
+                                    <option value="14">Abad Santos</option>
+                                    <option value="16">Blumentritt</option>
+                                    <option value="18">Tayuman</option>
+                                    <option value="20">Bambang</option>
+                                    <option value="22">Doroteo Jose</option>
+                                    <option value="24">Carriedo</option>
+                                    <option value="26">Central Terminal</option>
+                                    <option value="28">United Nations</option>
+                                    <option value="30">Pedro Gil</option>
+                                    <option value="32">Quirino</option>
+                                    <option value="34">Vito Cruz</option>
+                                    <option value="36">Gil Puyat</option>
+                                    <option value="38">Libertad</option>
+                                    <option value="40">EDSA</option>
+                                    <option value="42">Baclaran</option>
+                                    <option value="44">Dr. Santos</option>
+                                </select>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <label for="going-to" class="form-label">Going To:</label>
+                                <select class="form-select" id="going-to">
+                                    <option selected>Select a Station</option>
+                                    <option value="2">Fernando Poe Jr.</option>
+                                    <option value="4">Balintawak</option>
+                                    <option value="6">5th Avenue</option>
+                                    <option value="8">Monumento</option>
+                                    <option value="10">Grace Park</option>
+                                    <option value="12">R. Papa</option>
+                                    <option value="14">Abad Santos</option>
+                                    <option value="16">Blumentritt</option>
+                                    <option value="18">Tayuman</option>
+                                    <option value="20">Bambang</option>
+                                    <option value="22">Doroteo Jose</option>
+                                    <option value="24">Carriedo</option>
+                                    <option value="26">Central Terminal</option>
+                                    <option value="28">United Nations</option>
+                                    <option value="30">Pedro Gil</option>
+                                    <option value="32">Quirino</option>
+                                    <option value="34">Vito Cruz</option>
+                                    <option value="36">Gil Puyat</option>
+                                    <option value="38">Libertad</option>
+                                    <option value="40">EDSA</option>
+                                    <option value="42">Baclaran</option>
+                                    <option value="44">Dr. Santos</option>
+                                </select>                                
+                            </div>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button id="regular-fare" class="btn btn-outline-primary flex-grow-1">Regular Fare</button>
+                            <button id="discounted-fare" class="btn btn-outline-secondary flex-grow-1">Discounted Fare</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card mb-4 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Purchase a Beep Card</h5>
+                        <a href="https://www.mrt3.com/index.php/hidden/9-news/253-with-lrt-mrt-s-beep-on-its-way-a-look-at-our-neighbors-contactless-smart-cards.html"><img class="img-fluid beep" src="https://www.mrt3.com/images/SINGLE.png" alt="MRT Ticket"></a>
+                    </div>
+                </div>
+            
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Ticket Price</h5>
+                        <p id="ticket-price">Php 0</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <br>
+
+<script>
+    const leavingFrom = document.getElementById('leaving-from');
+    const goingTo = document.getElementById('going-to');
+    const regularFareBtn = document.getElementById('regular-fare');
+    const discountedFareBtn = document.getElementById('discounted-fare');
+    const ticketPrice = document.getElementById('ticket-price');
+
+    function calculateFare(isDiscounted) {
+        const fromValue = parseInt(leavingFrom.value) || 0;
+        const toValue = parseInt(goingTo.value) || 0;
+        const stationDifference = Math.abs(fromValue - toValue);
+
+        if (stationDifference === 0) {
+            ticketPrice.textContent = 'Php 0';
+            return;
+        }
+
+        const baseFare = Math.min(13 + stationDifference, 28);
+
+        const finalFare = isDiscounted ? baseFare * 0.8 : baseFare;
+        ticketPrice.textContent = `Php ${finalFare.toFixed(2)}`;
+    }
+
+    regularFareBtn.addEventListener('click', () => calculateFare(false));
+    discountedFareBtn.addEventListener('click', () => calculateFare(true));
+</script>    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="footer bg-white border-top mt-4 py-3">
+        <div class="container text-center">
+            <p class="mb-2 fw-bold text-primary">Margo Intalan and Tessa Aseo | 9 Sapphire</p>
+        </div>
+    </footer>
+            
+</body>
+</html>
